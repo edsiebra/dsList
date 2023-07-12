@@ -1,8 +1,8 @@
 package com.edson.dslist.dto;
 
 import com.edson.dslist.entities.Game;
+import com.edson.dslist.projections.GameMinProjection;
 
-import jakarta.persistence.Column;
 
 public class GameMinDTO {
 
@@ -17,7 +17,15 @@ public class GameMinDTO {
 	}
 
 	public GameMinDTO(Game entity) {
-		super();
+		id = entity.getId();
+		title = entity.getTitle();
+		year = entity.getYear();
+		imgUrl = entity.getImgUrl();
+		shortDescription = entity.getShortDescription();
+	}
+	
+	
+	public GameMinDTO(GameMinProjection entity) {
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();

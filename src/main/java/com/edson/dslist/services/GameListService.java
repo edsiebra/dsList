@@ -7,11 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.edson.dslist.dto.GameListDTO;
-import com.edson.dslist.dto.GameMinDTO;
-import com.edson.dslist.entities.Game;
 import com.edson.dslist.entities.GameList;
 import com.edson.dslist.repositories.GameListRepository;
-import com.edson.dslist.repositories.GameRepository;
 
 @Service
 public class GameListService {
